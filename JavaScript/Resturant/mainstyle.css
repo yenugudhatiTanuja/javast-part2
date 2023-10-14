@@ -1,0 +1,81 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 16px;
+    overflow-x: hidden;
+    scroll-padding-top: 5.5em;
+    scroll-behavior: smooth;
+}
+header{
+    position:fixed;
+    left:0;
+    top:0;
+    right:0;
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    background-color: hwb(0 94% 6%); 
+    padding-left:50px;
+    padding-right:50px;
+    z-index: 1000; 
+    height:20px;
+}
+.logo a{
+    font-size: larger;
+    text-decoration: none;
+    color:indianred;
+   
+}
+header .nav-bar ul{
+    display:flex
+}
+header .nav-bar ul li{
+    list-style-type: none;
+    margin:20px;
+}
+header .nav-bar ul li a{
+    text-decoration: none;
+    font-size: 16px;
+    padding:5px;
+    color:black;
+}
+header .nav-bar ul li a:hover{
+    border:2px solid indianred;
+    background-color:indianred;
+    border-radius: 20px;   
+}
+header .user-account a{
+    text-decoration: none;
+    font-size: 16px;
+    color:black;
+    padding:5px;
+    text-transform: uppercase;
+}
+header .user-account a:hover{
+    border:2px solid indianred;
+    background-color:indianred;
+    border-radius: 20px;   
+    transform:scale(0.5s);
+}
+menu-bar{
+    font-size:24px;
+    cursor:pointerl;
+    z-index:10001;
+    display:none;
+}
+.container{
+    position:relative;
+    width:100%;
+    min-height:640px;
+}
+
+
+
+
+
+
+
+

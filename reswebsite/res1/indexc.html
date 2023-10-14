@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>slide bar</title>
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+/>
+    <style>
+        section{
+            padding:2rem 9%;
+            justify-content: space-between;
+        }
+        section:nthchild(even)
+        {
+            background-color: #eee;
+        }
+        .specials .specials-slider .slide{
+            display:flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap:2rem;
+            padding-top:9rem;
+        }
+
+        .specials .specials-slider .slide .show{
+            flex:1 1 45rem;
+        }
+
+        .specials .specials-slider .slide .slideimage img{
+            width:100%
+        }
+
+      .specials .specials-slider .slide .show span{
+
+        color:springgreen;
+        font-size:2.5rem;
+      }
+      .specials .specials-slider .slide .show h3{
+        color:black;
+        font-size: 7rem;
+      }
+
+      /*.specials .specials-slider .slide .show p{
+        color:burlywood;
+        font-size:2.2rem;
+        padding :5rem 0;
+        line-height:1.5;
+      }*/
+    
+      .swiper-pagination-bullet-active{
+        background-color: seagreen;
+      }
+    </style>
+</head>
+<body>
+    <section class="specials" id="specials">
+        <div class="swiper specials-slider">
+            <div class="swiper-wrapper wra">
+                <div class="swiper-slide slide">
+                    <div class="show">
+                        <span>our specials</span>
+                        <h3>glace coffe</h3>
+                        <p>dddddddddddd</p>  
+                        <a href="#" class="btn2"></a>                
+                 </div>
+                 <div class="slideimage">
+                    <img src="c6.png" alt="">
+                 </div>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <div class="show">
+                        <span>our specials</span>
+                        <h3>coffe with whipping cream</h3>
+                        <p>ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd</p>  
+                        <a href="#" class="btn2"></a>                
+                 </div>
+                 <div class="slideimage">
+                    <img src="c8.png" alt="">
+
+                 </div>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <div class="show">
+                        <span>our specials</span>
+                        <h3>Hot cream coffe</h3>
+                        <p>ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd</p>  
+                        <a href="#" class="btn2"></a>                
+                 </div>
+                 <div class="slideimage">
+                    <img src="c6.png" alt="">
+                 </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+    <script>
+        var swiper = new Swiper(".specials-slider", {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 7500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      loop:true,
+    });
+    </script>
+</body>
+</html>

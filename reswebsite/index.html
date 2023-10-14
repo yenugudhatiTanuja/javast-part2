@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive cofee shop</title>
+    <!--font awesome link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+
+    
+</head>
+<body>
+    <header class="header">
+    <a href="#" class="logo"><i class="fa-solid fa-mug-saucer"></i>Coffee Shop</a>
+
+    <nav class="navbar">
+          <div id="close-navbar" class="fa-solid fa-xmark"></div>
+          <a href="#home">home</a>
+          <a href="#about">about</a>
+          <a href="#menu">menu</a>
+          <a href="#offers">offers</a>
+          <a href="#contact">contact</a>
+          <a href="#signup">signup</a>
+          <a href="#signin">signin</a>
+
+    </nav>
+    <div class="icons">
+        <div id="menu-bar" class="fas fa-bars"></div>
+    </div>
+</header>
+
+<!--Home-->
+<section class="home" id="home">
+    <div class="content">
+        <h3>Coffee<br>feels like<br>Refreshment</h3>
+        <a href="#" class="btn">Order Now</a>
+    </div>
+</section>
+<!--Home end-->
+
+<!-- About us -->
+
+<h1 class="heading">about us</h1>   
+<section class="about" id="about">
+    <div class="row">
+        <div class="image">
+            <img src="about.jpg" alt="about">
+        </div>
+        <div class="content">
+            <h3>What makes our coffee special?</h3>
+            <div class="line"></div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, debitis alias veritatis exercitationem quo, laudantium dolorem quas nesciunt ipsam provident corporis, tenetur facere rerum dolor non? Fugiat eius maxime aperiam!</p>
+        </div>
+      </div>
+</section>
+
+<!-- About us end -->
+
+
+<!-- menu start -->
+
+
+<section class="menu" id="menu">
+
+    <h1 class="heading">menu</h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="menu-1.png" alt="">
+            <h3>Classic Cofffee Espresso</h3>
+            <div class="price">100.00</div>
+        </div>
+
+        <div class="box">
+            <img src="menu-1.png" alt="">
+            <h3>Classic Cofffee Espresso</h3>
+            <div class="price">150.00</div>
+        </div>
+
+        <div class="box">
+            <img src="menu-1.png" alt="">
+            <h3>Classic Cofffee Espresso</h3>
+            <div class="price">200.00</div>
+        </div>
+
+        <div class="box">
+            <img src="menu-1.png" alt="">
+            <h3>Classic Cofffee Espresso</h3>
+            <div class="price">120.00</div>
+        </div>
+
+        <div class="box">
+            <img src="menu-1.png" alt="">
+            <h3>Classic Cofffee Espresso</h3>
+            <div class="price">180.00</div>
+        </div>
+
+        <div class="box">
+            <img src="menu-1.png" alt="">
+            <h3>Classic Cofffee Espresso</h3>
+            <div class="price">170.00</div>
+        </div>
+
+    </div>
+</section>
+<!-- menu end-->
+
+
+<!--offers start-->
+<h1 class="offer-header">Offers</h1>
+<section class="offers" id="offers">
+   <div class="offer-slider">
+       <div class="slider">
+          <img src="m1.png" alt="Image 1">
+          <img src="c11.png" alt="Image 1">
+          <img src="c88.png" alt="Image 2">
+           <img src="c33.png" alt="Image 3">
+           <img src="c44.png" alt="Image 4">
+         <img src="c55.png" alt="Image 5">
+       </div>
+       <div class="para">
+        <p>if you are huger</p>
+        <button class="btn3">HurryUP Now</button>
+       </div>
+</div>
+</section>
+
+
+<!--offers end-->
+
+
+
+<!-- contact start -->
+
+
+<section class="contact" id="contact">
+
+    <h1 class="heading">Contact Us</h1>
+
+    <div class="row">
+
+        <div class="image">
+            <img src="image/contact.png" alt="">
+        </div>
+
+        <form action="">
+            <h3>Get in touch</h3>
+
+            <div class="inputBox">
+                <span class="fas fa-user"></span>
+                <input type="text" placeholder="name">
+            </div>
+
+            <div class="inputBox">
+                <span class="fas fa-envelope"></span>
+                <input type="email" placeholder="email">
+            </div>
+
+            <div class="inputBox">
+                <span class="fas fa-phone"></span>
+                <input type="number" placeholder="phone">
+            </div>
+
+            <input type="submit" value="send message" class="btn">
+        </form>
+    </div>
+</section>
+
+<!-- contact end -->
+
+
+<!-- signup start -->
+
+<section class="signup" id="signup">
+    <div class="container">
+        <div class="header">
+            <h2>Register Here</h2>
+        </div>
+        <form action="" class="form" id="form">
+            <div class="field">
+                <label >Username</label>
+                <input type="text" placeholder="Enter user full name" id="uname">
+                <span class="material-icons success"> check_circle</span>
+                <span class="material-icons error ">error</span>
+                <small>Error message</small>
+            </div>
+            <div class="field ">
+                <label>Email</label>
+                <input type="email" placeholder="enter your email" id="email">
+                <span class="material-icons success "> check_circle</span>
+                <span class="material-icons error">error</span>
+                <small>Error message</small>
+            </div>
+            <div class="field">
+                <label>Password</label>
+                <input type="password" placeholder="password" id="password">
+                <span class="material-icons success"> check_circle</span>
+                <span class="material-icons error">error</span>
+                <small>Error message</small>
+            </div>
+            <div class="field">
+                <label>Confirm Password</label>
+                <input type="password" placeholder="Reenter password" id="cpassword">
+                <span class="material-icons success"> check_circle</span>
+                <span class="material-icons error">error</span>
+                <small>Error message</small>
+            </div>
+            <div class="field">
+                <input type="checkbox" id="tc" class="terms" >
+                <label>I agree to terms and conditions</label>               
+                <small>Error message</small>
+            </div>
+            <button class="button">submit</button>
+            <div class="links">
+                <p>Already have Account ?<a href="#signin">login</a></p>
+            </div>
+        </form>
+    </div>
+</section>
+<!-- signup end -->
+
+
+<!--signin start-->
+<section class="signin" id="signin">
+    <div class="wrapper">
+        <div class="heading">
+            <h1>Login</h1>
+        </div>
+        <form action=" " class="form-s" id="form-s">
+            <div class="input-box">
+                <label>Username</label>
+                <input type="text" placeholder="Enter username" id="uname-s">
+                <span class="material-icons success"> check_circle</span>
+                <span class="material-icons error ">error</span>
+                <small>Error Message</small>
+            </div>
+            <div class="input-box">
+                <label>Password</label>
+                <input type="password" placeholder="Enter password" id="password-s">
+                <span class="material-icons success">check_circle</span>
+                <span class="material-icons error ">error</span>
+                <small>Error message</small>
+            </div>
+            <button class="btn-s">Login</button>
+            <div class="link-s">
+                <p>If you don't have an Account?<a href="#signup">Register Here</a></p>
+            </div>
+        </form>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+<!-- footer start -->
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="footer-1.png" alt="">
+            <h3>address</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente quia aliquid velit quis et adipisci, doloremque officia</p>
+
+        </div>
+
+        <div class="box">
+            <img src="footer-2.png" alt="">
+            <h3>E-mail</h3>
+            <a href="#" class="link">coffeday@gmail.com</a>
+            <a href="#" class="link">cofffeday2023@gmail.com</a>
+        </div>
+
+        <div class="box">
+            <img src="footer-3.png" alt="">
+            <h3>Call us</h3>
+            <p>+62 1234 2541</p>
+        </div>
+
+        <div class="box">
+            <img src="footer-4.png" alt="">
+            <h3>Opening hours</h3>
+            <p>Monday - Friday: 8:00AM - 11:00PM
+               <br> Saturday: 8:00AM - 11:00PM</p>
+        </div>
+
+    </div>
+   <button id="scrollTopButton" class="scroll-top-button">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <div class="credit">created by <span>coffeehouse</span> | all rights reserved!</div>
+
+</section>
+<!-- footer end -->
+
+    <script src="main.js"></script>
+</body>
+</html>
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

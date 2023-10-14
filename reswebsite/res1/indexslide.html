@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        main {
+    width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: center;
+    background-color: blanchedalmond;
+
+}
+
+
+.slider {
+    max-width: 100%;
+    height: auto;
+    background-color: beige;
+}
+
+.slider img {
+    max-width: 100%;
+    height: auto;
+    display: none;
+}
+
+#home img:first-child {
+    display: block;
+}
+
+section {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+    </style>
+</head>
+<body>
+    <main>
+        <section id="home">
+            <div class="slider">
+                <img src="m1.png" alt="Image 1">
+                <img src="c11.png" alt="Image 1">
+                <img src="c88.png" alt="Image 2">
+                <img src="c33.png" alt="Image 3">
+                <img src="c44.png" alt="Image 4">
+                <img src="c55.png" alt="Image 5">
+    
+            </div>
+        </section>
+    </main>
+    <script>
+
+        // script.js
+document.addEventListener("DOMContentLoaded", function () {
+    const images = document.querySelectorAll(".slider img");
+    let currentImageIndex = 0;
+
+    function showImage(index) {
+        images[currentImageIndex].style.display = "none";
+        images[index].style.display = "block";
+        currentImageIndex = index;
+    }
+
+    function nextImage() {
+        const nextIndex = (currentImageIndex + 1) % images.length;
+        showImage(nextIndex);
+    }
+
+    setInterval(nextImage, 1000);
+});
+ 
+    </script>
+
+
+</body>
+</html>
