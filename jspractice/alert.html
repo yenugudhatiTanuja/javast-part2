@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Alert Box Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Alert Box Example</h1>
+    
+    <form id="myForm">
+        <label for="inputField">Enter your name:</label>
+        <input type="text" id="inputField" placeholder="Your Name">
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <script>
+        // Add a submit event listener to the form
+        document.getElementById("myForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent the form from actually submitting
+
+            // Get the input field value
+            var inputValue = document.getElementById("inputField").value;
+
+            // Create the alert message
+            var alertMessage = "Hello, " + inputValue + "!";
+
+            // Display the alert box with the message
+            alert(alertMessage);
+        });
+    </script>
+</body>
+</html>
+ 
